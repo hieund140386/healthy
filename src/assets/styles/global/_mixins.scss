@@ -1,0 +1,7 @@
+@mixin line-clamp($visiblerows: 2) {
+  line-clamp: $visiblerows;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $visiblerows;
+  -webkit-box-orient: vertical;
+}

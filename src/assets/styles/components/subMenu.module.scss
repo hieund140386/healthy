@@ -1,0 +1,26 @@
+@import "../global/variables";
+
+.container {
+  position: absolute;
+  content: "";
+  top: 100%;
+  right: calc(100% - 32px);
+  z-index: 10;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+  .item {
+    background-color: $GRAY_707;
+    width: 100%;
+    padding: 23px 32px;
+    padding-right: 0;
+    color: white;
+    border-bottom: 1px solid $GRAY_707_25;
+    border-top: 1px solid $WHITE__15;
+    position: relative;
+    text-align: left;
+  }
+}

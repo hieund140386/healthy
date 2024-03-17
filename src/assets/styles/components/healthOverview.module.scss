@@ -1,0 +1,28 @@
+@import "../global/variables";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e;
+  position: relative;
+  .image {
+    flex-basis: 40%;
+    min-width: 540px;
+    color: $PRIMARY_500;
+    height: 312px;
+    position: relative;
+  }
+  .chart {
+    flex: 1;
+    div {
+      height: 312px;
+    }
+  }
+  .progressCircle {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}

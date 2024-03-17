@@ -1,0 +1,48 @@
+.container {
+  width: 288px;
+  height: 288px;
+  border: 24px solid #ffcc21;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 240px;
+    background-color: #00000075;
+    display: block;
+    z-index: -1;
+  }
+  img {
+    filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .content {
+    text-align: center;
+    z-index: 1;
+    h3 {
+      font-size: 25px;
+      color: #ffcc21;
+      text-transform: uppercase;
+      line-height: 30px;
+      letter-spacing: 0.13x;
+      margin-bottom: 11px;
+      font-weight: 300;
+    }
+    p {
+      background-color: #ffcc21;
+      color: white;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      width: 160px;
+      height: 24px;
+    }
+  }
+}

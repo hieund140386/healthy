@@ -1,0 +1,53 @@
+@import "../global/variables";
+
+.wrapper {
+  padding: 16px 24px;
+  background-color: $DARK_500;
+  margin: 56px auto;
+  height: 264px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: $WHITE;
+  font-weight: normal;
+  & > h3 {
+    flex-basis: 96px;
+    max-width: 96px;
+    font-size: 15px;
+    line-height: 18px;
+    word-wrap: break-word;
+    letter-spacing: 0.15px;
+  }
+  & > span {
+    flex: 1;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.11px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px 40px;
+  max-height: 192px;
+  overflow: auto;
+  padding-right: 56px;
+}
+.container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: $PRIMARY_300;
+  border-radius: 6px;
+  width: 6px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: $GRAY_400;
+  border-radius: 6px;
+}

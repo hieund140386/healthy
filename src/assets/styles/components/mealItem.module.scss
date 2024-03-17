@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  width: 234px;
+  height: 234px;
+  .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 13.5px;
+    color: white;
+    background: #ffcc21;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}

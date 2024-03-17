@@ -1,0 +1,20 @@
+@import "../global/variables";
+
+.wrapper {
+  overflow: auto;
+  height: 100%;
+  padding: 0 160px;
+}
+.diariesList {
+  margin-top: 56px;
+}
+.lineChart {
+  background-color: $DARK_600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    height: 304px;
+    width: 960px;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../global/variables";
+
+.container {
+  background-color: $DARK_500;
+  padding: 0 160px;
+  position: relative;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+  }
+  .active {
+    color: $PRIMARY_400;
+    & p {
+      color: $PRIMARY_400;
+    }
+  }
+  li:hover {
+    cursor: pointer;
+  }
+  a {
+    color: $WHITE;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    li {
+      position: relative;
+      flex-basis: 160px;
+      min-width: 160px;
+      &:last-child {
+        min-width: max-content;
+        flex-basis: max-content;
+        div {
+          justify-content: start;
+        }
+      }
+    }
+  }
+}

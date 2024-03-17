@@ -1,0 +1,28 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.container {
+  width: 231px;
+  height: 231px;
+  border: 2px solid $GRAY_707;
+  padding: 16px;
+  color: $DARK_500;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & > div:first-of-type {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.09px;
+    font-weight: 400;
+  }
+  & > div:last-of-type {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.06px;
+    font-weight: 300;
+    & > div:last-child {
+      @include line-clamp(5);
+    }
+  }
+}

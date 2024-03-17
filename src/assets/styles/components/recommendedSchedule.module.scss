@@ -1,0 +1,40 @@
+@import "../global//variables";
+@import "../global//mixins";
+
+.container {
+  height: 222px;
+  width: 234px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 8px;
+  & > div:first-of-type {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: calc(50% - 33px);
+    left: 0;
+    background-color: $PRIMARY_300;
+    color: $WHITE;
+    padding: 5px;
+  }
+  & > div:nth-of-type(2) {
+    color: $DARK_500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.08px;
+    font-weight: 300;
+    @include line-clamp();
+  }
+  & > div:last-of-type {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: $PRIMARY_400;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.06px;
+  }
+}

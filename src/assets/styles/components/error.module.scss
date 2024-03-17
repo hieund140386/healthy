@@ -1,0 +1,17 @@
+@import "../global//variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: calc(100vh - 192px);
+  .button {
+    color: $WHITE;
+    background-color: $PRIMARY_400;
+    padding: 14px 4px;
+    width: 200px;
+    border-radius: 4px;
+  }
+}

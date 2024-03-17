@@ -1,0 +1,29 @@
+@import "../global//variables";
+
+.container {
+  width: 216px;
+  height: 144px;
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $PRIMARY_300;
+  div {
+    letter-spacing: 0.11px;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: normal;
+    &:last-child {
+      font-weight: 300;
+      color: $WHITE;
+      letter-spacing: 0;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  hr {
+    width: 56px;
+    margin: 10px 0 8px;
+  }
+}

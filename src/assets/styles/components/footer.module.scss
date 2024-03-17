@@ -1,0 +1,18 @@
+@import "../global/variables";
+
+.container {
+  background-color: $DARK_500;
+  ul {
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+  }
+  a {
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
